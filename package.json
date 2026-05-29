@@ -1,0 +1,47 @@
+{
+  "name": "@superinstance/openconstruct-hub",
+  "version": "0.1.0",
+  "description": "OpenConstruct Integration Hub — meta-repo and TypeScript binding development for the SuperInstance ecosystem",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuperInstance/openconstruct-hub.git"
+  },
+  "keywords": [
+    "openconstruct",
+    "superinstance",
+    "agent",
+    "ai",
+    "onboarding",
+    "multi-agent",
+    "fleet"
+  ],
+  "author": "SuperInstance",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SuperInstance/openconstruct-hub/issues"
+  },
+  "homepage": "https://github.com/SuperInstance/openconstruct-hub#readme",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "@superinstance/openconstruct": "^0.1.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  }
+}

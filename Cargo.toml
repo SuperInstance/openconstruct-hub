@@ -1,0 +1,52 @@
+[workspace]
+resolver = "2"
+members = [
+    # Core Rust crates — clone individually from SuperInstance
+    # Uncomment as you add them to your workspace
+    # "crates/openconstruct-core",
+    # "crates/conservation-spectral",
+    # "crates/flux-algebra",
+    # "crates/ga-core",
+    # "crates/categorical-agents",
+    # "crates/clark-agent",
+    # "crates/agent-identity",
+    # "crates/agent-handshake",
+    # "crates/agent-manifest",
+    # "crates/agent-rhythm",
+    # "crates/agent-shadow",
+    # "crates/agent-field",
+    # "crates/agent-dna",
+    # "crates/capability-spec",
+    # "crates/causal-graph",
+    # "crates/flux-vm",
+    # "crates/flux-hyperbolic",
+    # "crates/flux-genome",
+    # "crates/flux-index",
+    # "crates/counterpoint-engine",
+    # "crates/holonomy-harmony",
+    # "crates/conservation-spectral-v2",
+    # "crates/ab-testing",
+    # "crates/bid-engine",
+    # "crates/caching-service",
+    # "crates/analog-spectral",
+    # "crates/fibonacci-growth",
+    # "crates/cocapn-health",
+    # "crates/cocapn-explain",
+    # "crates/wasserstein-agents",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SuperInstance/openconstruct-hub"
+
+[workspace.dependencies]
+# Common dependencies across workspace members
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
